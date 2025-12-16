@@ -1,1 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - [Your Extension Name]</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4285f4;
+            --secondary-color: #34a853;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --border-color: #ddd;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), #5c6bc0);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .last-updated {
+            background-color: #e8f0fe;
+            color: var(--primary-color);
+            padding: 12px 20px;
+            text-align: center;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        h2 i {
+            background-color: #e8f0fe;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        p {
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+        
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            padding-left: 5px;
+        }
+        
+        .highlight-box {
+            background-color: var(--light-bg);
+            border-left: 4px solid var(--secondary-color);
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .contact-info {
+            background: linear-gradient(to right, #e8f0fe, #f1f8e9);
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 1px solid #cbd5e1;
+        }
+        
+        .contact-info h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .contact-info p {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #f1f3f4;
+            color: #666;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+        
+        .footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+            transition: all 0.3s;
+            z-index: 100;
+        }
+        
+        .back-to-top:hover {
+            background-color: #3367d6;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-shield-alt"></i> Privacy Policy</h1>
+            <p>This Privacy Policy describes how "Lovley AI" ("we", "us", or "our") collects, uses, and protects your information when you use our browser extension.</p>
+        </div>
+        
+        <div class="last-updated">
+            <i class="fas fa-calendar-alt"></i> Last Updated: 16 Dec 2025
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2><i class="fas fa-info-circle"></i> 1. Information We Collect</h2>
+                <p>We collect the following information to provide and improve our service:</p>
+                <ul>
+                    <li><strong>Email Address:</strong> Collected solely for user authentication and login purposes. We do not use your email for advertising or marketing.</li>
+                    <li><strong>Message Content:</strong> The text messages you submit to the extension for processing. This content is <strong>anonymized</strong> before being sent to third-party AI services.</li>
+                    <li><strong>Technical Data:</strong> Basic usage data such as timestamps and error logs to maintain service functionality.</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-user-cog"></i> 2. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li>To authenticate users and provide secure access to the extension</li>
+                    <li>To process your messages through AI models and generate responses</li>
+                    <li>To maintain, improve, and troubleshoot the extension's functionality</li>
+                    <li>To communicate important service updates (via email, if provided)</li>
+                </ul>
+                
+                <div class="highlight-box">
+                    <h3><i class="fas fa-user-secret"></i> Anonymization Process</h3>
+                    <p>Before sending message content to third-party AI APIs, we employ technical measures to remove personally identifiable information (PII) including:</p>
+                    <ul>
+                        <li>Names, email addresses, and phone numbers</li>
+                        <li>Specific physical addresses and locations</li>
+                        <li>Financial information and identification numbers</li>
+                        <li>Any other direct identifiers</li>
+                    </ul>
+                    <p>The goal is to ensure that AI models receive only anonymized content that cannot be traced back to individual users.</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-exchange-alt"></i> 3. Third-Party Services</h2>
+                <p>We use third-party AI APIs to process anonymized message content:</p>
+                <ul>
+                    <li>Anonymized message content is transmitted to selected AI service providers</li>
+                    <li>These providers have their own privacy policies governing data use</li>
+                    <li>We select providers with strong data protection commitments, but we cannot control their independent practices</li>
+                    <li>Your email address is <strong>not shared</strong> with these third-party AI services</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-lock"></i> 4. Data Security & Storage</h2>
+                <p>We implement reasonable security measures to protect your information:</p>
+                <ul>
+                    <li>Email addresses are stored separately from anonymized message data</li>
+                    <li>Data transmission is encrypted using industry-standard protocols</li>
+                    <li>Anonymized interaction data may be stored temporarily to improve service quality</li>
+                    <li>You can request deletion of your data by contacting us</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-gavel"></i> 5. Your Rights & Choices</h2>
+                <p>Depending on your location, you may have certain rights regarding your data:</p>
+                <ul>
+                    <li><strong>Access:</strong> Request a copy of the personal data we hold about you</li>
+                    <li><strong>Correction:</strong> Request correction of inaccurate data</li>
+                    <li><strong>Deletion:</strong> Request deletion of your personal data</li>
+                    <li><strong>Opt-out:</strong> Discontinue use of the extension at any time</li>
+                </ul>
+                <p>To exercise these rights, contact us using the information below.</p>
+            </div>
+            
+            <div class="section">
+                <h2><i class="fas fa-sync-alt"></i> 6. Changes to This Policy</h2>
+                <p>We may update this Privacy Policy periodically. We will notify users of significant changes by:</p>
+                <ul>
+                    <li>Updating the "Last Updated" date at the top of this policy</li>
+                    <li>Posting a notice within the extension interface</li>
+                    <li>Sending an email notification (if you have provided an email)</li>
+                </ul>
+                <p>Your continued use of the extension after changes constitutes acceptance of the updated policy.</p>
+            </div>
+            
+            <div class="contact-info">
+                <h3><i class="fas fa-envelope"></i> Contact Us</h3>
+                <p>If you have questions about this Privacy Policy or your data:</p>
+                <p><i class="fas fa-envelope"></i> Email: lovleyai67@gmail.com</p>
+                <p><i class="fas fa-globe"></i> Website: </p>
+                <p><i class="fas fa-download"></i> Extension: </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>©2026 Lovley AI. All rights reserved.</p>
+            <p>This extension complies with applicable data protection regulations including GDPR and CCPA.</p>
+            <p>By using this extension, you agree to the terms outlined in this Privacy Policy and our <a href="#">User Agreement</a>.</p>
+        </div>
+    </div>
+    
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
 
+    <script>
+        // Back to top button functionality
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = 'flex';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Update year automatically
+        document.addEventListener('DOMContentLoaded', () => {
+            const yearElements = document.querySelectorAll('[Year]');
+            const currentYear = new Date().getFullYear();
+            yearElements.forEach(element => {
+                if (element.textContent.includes('[Year]')) {
+                    element.textContent = element.textContent.replace('[Year]', currentYear);
+                }
+            });
+            
+            // Update today's date
+            const dateElements = document.querySelectorAll('[Date]');
+            const today = new Date().toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+            dateElements.forEach(element => {
+                if (element.textContent.includes('[Date]')) {
+                    element.textContent = element.textContent.replace('[Date]', today);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
